@@ -1,0 +1,30 @@
+.home {
+  .title {
+    margin: 5rem auto;
+    width: fit-content;
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: -1rem;
+    }
+
+    p {
+      font-size: 0.73rem;
+      font-weight: bold;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .home .title {
+    margin: 12rem auto;
+    h1 {
+      font-size: 8rem;
+      margin-bottom: -2rem;
+    }
+
+    p {
+      font-size: 1.46rem;
+    }
+  }
+}

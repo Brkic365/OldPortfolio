@@ -1,0 +1,147 @@
+.contact {
+  width: 100%;
+
+  h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+    background-color: #8685ef;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background-color: darken(#8685ef, 10%);
+    }
+  }
+
+  form {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+
+    .nameAndCompany {
+      width: 100%;
+
+      .name,
+      .company {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
+    label,
+    input,
+    textarea {
+      width: 90%;
+    }
+
+    label span {
+      color: rgb(255, 94, 94);
+      opacity: 1;
+    }
+
+    input,
+    textarea {
+      margin-bottom: 0.5rem;
+      border-radius: 0.2rem;
+      border: none;
+      outline: none;
+      font-size: 1.1rem;
+      padding: 0.3rem 0.5rem;
+      color: black;
+      resize: none;
+    }
+  }
+
+  .confirmed {
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    button {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .contact {
+    h1 {
+      font-size: 4rem;
+    }
+
+    .confirmed {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    form {
+      width: 70%;
+      margin: 1rem auto;
+
+      label {
+        font-size: 1.3rem;
+      }
+
+      button {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+      }
+
+      input,
+      textarea {
+        font-size: 1.5rem;
+      }
+
+      .nameAndCompany {
+        display: flex;
+        align-items: center;
+        place-content: space-between;
+        width: 90%;
+
+        .name {
+          label,
+          input {
+            margin-right: auto;
+            width: 95%;
+          }
+        }
+
+        .company {
+          label,
+          input {
+            margin-left: auto;
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .contact {
+    form {
+      width: 40%;
+    }
+  }
+}

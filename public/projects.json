@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Youtube",
+    "type": "Web Application",
+    "personal": false,
+    "imageUrl": "1",
+    "link": "www.youtube.com"
+  },
+  {
+    "name": "Youtube",
+    "type": "Web Application",
+    "personal": false,
+    "imageUrl": "1",
+    "link": "www.youtube.com"
+  },
+  {
+    "name": "Youtube",
+    "type": "Web Application",
+    "personal": true,
+    "imageUrl": "1",
+    "link": "www.youtube.com"
+  }
+]

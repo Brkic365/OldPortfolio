@@ -1,0 +1,133 @@
+.project {
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    position: absolute;
+    font-size: 10rem;
+    opacity: 0.2;
+    z-index: 1;
+  }
+
+  .title {
+    z-index: 2;
+    margin-top: 4rem;
+    text-align: center;
+
+    h4 {
+      font-size: 2rem;
+      border-bottom: 1px solid #707070;
+    }
+
+    p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-top: 0.5rem;
+      margin-bottom: 3rem;
+    }
+
+    a {
+      z-index: 2;
+      border-radius: 0.3rem;
+      padding: 0.5rem 1rem;
+      background-color: #8685ef;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        background-color: darken(#8685ef, 10%);
+      }
+    }
+  }
+
+  img {
+    width: 80%;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .project {
+    flex-direction: row;
+    place-content: space-between;
+    width: 90%;
+    padding-left: 5rem;
+    margin: 2rem auto;
+
+    h1 {
+      font-size: 13rem;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .title {
+      margin-top: 4rem;
+
+      h4 {
+        font-size: 2.8rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+
+      a {
+        font-size: 1.5rem;
+      }
+    }
+
+    img {
+      width: 60%;
+    }
+  }
+
+  .reverseProject {
+    flex-direction: row-reverse;
+    padding-left: 0;
+    padding-right: 5rem;
+
+    h1 {
+      top: 50%;
+      left: 100%;
+      transform: translate(-100%, -50%);
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .project {
+    width: 80%;
+    padding-left: 8rem;
+
+    h1 {
+      font-size: 18rem;
+    }
+
+    .title {
+      margin-top: 7rem;
+
+      h4 {
+        font-size: 3.5rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+        margin-bottom: 5rem;
+      }
+
+      a {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  .reverseProject {
+    padding-left: 0;
+    padding-right: 8rem;
+  }
+}
