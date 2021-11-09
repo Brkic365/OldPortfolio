@@ -13,7 +13,7 @@ function About() {
       <p>Ja san brkic.</p>
       <p>Volim raditi za dobre pare :).</p>
       <Link href="/contact" passHref={true}>
-        <a>LET'S WORK TOGETHER!</a>
+        <a>{"LET'S WORK TOGETHER!"}</a>
       </Link>
       <div className={styles.bottomBar}>
         <div className={styles.left}>
