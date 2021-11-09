@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styles from "../styles/Contact.module.scss";
 
+import Head from "next/head";
+
 import { useRouter } from "next/router";
 
 export default function Contact() {
@@ -84,6 +86,9 @@ export default function Contact() {
 
   return (
     <div className={styles.contact}>
+      <Head>
+        <title>Contact</title>
+      </Head>
       <h1>Contact</h1>
       {formVisible ? ContactForm : ConfirmationMessage}
     </div>
