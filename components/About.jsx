@@ -3,8 +3,8 @@ import styles from "../styles/About.module.scss";
 
 import Link from "next/link";
 
-import { AiOutlineInstagram, AiFillGithub } from "react-icons/ai";
-import { BsFacebook, BsTwitter } from "react-icons/bs";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
 
 function About() {
   return (
@@ -27,10 +27,12 @@ function About() {
           <p>©Brkic 2021</p>
         </div>
         <div className={styles.right}>
-          <AiOutlineInstagram className={styles.icon} />
-          <BsFacebook className={styles.icon} />
-          <BsTwitter className={styles.icon} />
-          <AiFillGithub className={styles.icon} />
+          <Link href="https://www.linkedin.com/in/antonio-brkic-923137226/" passHref={true}>
+            <FaLinkedin className={styles.icon} />
+          </Link>
+          <Link href="https://github.com/Brkic365" passHref={true}>
+            <AiFillGithub className={styles.icon} />
+          </Link>
         </div>
       </div>
     </div>
