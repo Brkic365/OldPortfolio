@@ -24,7 +24,9 @@ function Project({ project }) {
         </Link>
       </div>
 
-      <img src={project.imageUrl} />
+      <Link href={project.link} passHref={true}>
+        <img src={project.imageUrl} />
+      </Link>
     </div>
   );
 }

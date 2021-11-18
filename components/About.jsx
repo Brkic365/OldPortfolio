@@ -10,8 +10,15 @@ function About() {
   return (
     <div className={styles.about}>
       <h1>ABOUT ME</h1>
-      <p>Ja san brkic.</p>
-      <p>Volim raditi za dobre pare :).</p>
+      <p>
+        I am Antonio Brkic, a freelance full stack web developer with various
+        skills and passion to learn even more.
+      </p>
+      <p>
+        My passion for web development started very early and I still have it. I
+        enjoy every project and make sure that my client enjoys my work even
+        more.
+      </p>
       <Link href="/contact" passHref={true}>
         <a>{"LET'S WORK TOGETHER!"}</a>
       </Link>
