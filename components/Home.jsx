@@ -8,18 +8,25 @@ import About from "./About";
 export default function Home() {
   const projects = [
     {
-      name: "Baustela",
+      name: "Honeycomb",
       type: "Web Application",
       personal: true,
       imageUrl: "https://i.imgur.com/FqnN3hO.png",
-      link: "https://relaxed-pike-67d1bc.netlify.app/",
+      link: "https://baustela2.netlify.app/",
     },
     {
-      name: "Bakmazon",
+      name: "eCommerce",
       type: "Web Application",
       personal: true,
       imageUrl: "https://i.imgur.com/sgMLhPd.png",
-      link: "https://eloquent-saha-8e6179.netlify.app/",
+      link: "https://bakmazon.netlify.app/",
+    },
+    {
+      name: "Minty Solutions",
+      type: "Web Application",
+      personal: false,
+      imageUrl: "https://i.imgur.com/HdcEhpC.png",
+      link: "https://mintysolutions.com/",
     },
   ];
 
